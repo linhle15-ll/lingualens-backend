@@ -1,0 +1,26 @@
+[project]
+name = "fastapi-toyapp"
+version = "0.1.0"
+description = "Backend for LinguaLens app, hosting API gateway for LinguaLens ML pipeline"
+readme = "README.md"
+requires-python = ">=3.9.6"
+dependencies = [
+    "fastapi[standard]",
+    "fastapi",
+    "uvicorn"
+    "torch",
+    "torchvision",
+    "ultralytics",
+    "transformers",
+    "sentencepiece",
+    "Pillow",
+    "python-multipart",
+    "sacremoses"
+]
+
+[project.scripts]
+run-app = "lingualens_backend.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

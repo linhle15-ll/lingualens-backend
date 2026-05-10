@@ -1,0 +1,11 @@
+fastapi[standard];
+fastapi;
+uvicorn;
+torch;
+torchvision;
+ultralytics;
+transformers;
+sentencepiece;
+Pillow;
+python-multipart;
+sacremoses
