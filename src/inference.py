@@ -1,6 +1,7 @@
 #inference.py
 import collections
 import torch
+import torch.nn.functional as F
 
 
 def beam_search_decode(encoder_out, h, c, decoder, vocabulary, max_len, beam_width, block_ngram_size=0):
